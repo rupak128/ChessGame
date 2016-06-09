@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chess.BoardNController">
+   <children>
+      <Button layoutX="5.0" layoutY="13.0" mnemonicParsing="false" onAction="#create_game_click" text="Create Game" />
+      <Button layoutX="5.0" layoutY="49.0" mnemonicParsing="false" onAction="#join_game_click" prefHeight="25.0" prefWidth="85.0" text="Join Game" />
+      <ImageView fitHeight="425.0" fitWidth="425.0" layoutX="125.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/ChessBoard.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="grid" layoutX="135.0" layoutY="101.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" />
+      <VBox fx:id="vB1" layoutX="5.0" layoutY="88.0" prefHeight="425.0" prefWidth="100.0" />
+      <VBox fx:id="vB2" layoutX="560.0" layoutY="88.0" prefHeight="425.0" prefWidth="100.0" />
+      <Label fx:id="info" layoutX="260.0" layoutY="10.0" textFill="#9e2525">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="info2" layoutX="280.0" layoutY="55.0" textFill="#260505">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chess.HomePageController">
+    <children>
+        <ImageView fx:id="ExitBtn" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../../Chess/Chess/image/chess.jpg" />
+            </image>
+        </ImageView>
+        <Button layoutX="319.0" layoutY="133.0" mnemonicParsing="false" onAction="#Exit" prefHeight="25.0" prefWidth="91.0" text="Exit" />
+        <MenuButton layoutX="319.0" layoutY="74.0" mnemonicParsing="false" text="New Game">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#Create_Host" text="Create Host" />
+                <MenuItem mnemonicParsing="false" onAction="#Join_Game" text="Join Game" />
+            </items>
+        </MenuButton>
+    </children>
+</AnchorPane>
